@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // el problema es que setimeout  demora y no permite que 
+    // la ejeucion termine procedimental mostrando 1-2-3
+
+    //let x=10;
+    //console.log("##### 1- proceso #######");
+    /*
+
+    setTimeout(() => {
+        x = x*3+2;
+        console.log("##### 2- proceso #######"+x);
+    },5000);
+
+    console.log("##### 3- proceso #######"+x);
+    */
+    //para usar la primesa realizarmo 
+
+    let z= 10;
+    console.log("#### 1- proceso "+z);
+    //promesa  que espera la terminacion del resultados
+    const promesa = new Promise((resolve,reject) => {
+        setTimeout(() => {
+             x= z*3+2;
+            console.log("### 2-proceso ********");
+            resolve(x);
+        });
+    },3000)
+
+    promesa.then(res => {
+        console.log("3- proceso trs "+res);
+    })
+    
+</script>
+</html>

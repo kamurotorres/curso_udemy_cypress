@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let edad = parseInt(prompt("ingrese su edad"));
+
+    
+
+
+    function validarEdad(e){
+    //operador y = &&
+    //operador o = ||
+
+        if(edad <= 0 || edad>=101){
+            console.log("edad no valida debe ser mayor 0 y menor 101");
+        }
+
+        else if(edad> 0 && edad <= 10 ){
+            console.log("eres un niño");
+        }
+
+        else if(edad>= 11 && edad <= 17 ){
+            console.log("eres un adolecente");
+        }
+
+        else if(edad>= 18 && edad <= 26 ){
+            console.log("eres un joven");
+        }
+        else{
+            console.log("eres mayor de edad");
+        }
+    }
+
+    validarEdad(edad);
+
+</script>
+</html>

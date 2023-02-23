@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let i=0
+    let a=0
+    let b=0
+    let c=0
+    
+    let repetir = parseInt(prompt("ingrese la cantidad de vez a reptir el programa"));
+
+    for(i=1;i<=repetir;i++){
+        a = parseFloat(prompt("ingresar v1"));
+        b = parseFloat(prompt("ingresar v2"))
+        c = a+b;
+        alert("el resultado es "+ c)
+    }
+
+    let tabla = parseInt(prompt("ingresar el valor de la tabla del "));
+    let repetir2 = parseInt(prompt("ingrese el final de la tabla"));
+
+    for (let x=1;x<=repetir2;x++){
+        
+        console.log("- "+tabla+" * "+" "+x+ " = "+ tabla*x);
+    }
+
+    //for con array
+    let datos = [1,2,3,4,5];
+    for(let x=1; x<= datos.length;x++){
+        console.log("numero de repetir " + x);
+    }
+  
+
+</script>
+</html>

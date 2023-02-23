@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let frutas=["Naranja","Pera","Melón","Sandia"];
+    alert(frutas[0]);
+    //saber el tamaño del array
+    console.log(frutas.length);
+    let datos = { nombre:"Kevin",ap:"Torres",am:"Alvarez"};
+    console.log(datos);
+    console.log("el nombre es: "+ datos.nombre);
+
+    frutas.forEach(function(elemento,posicion,array){
+        console.log("elementos: " + elemento)
+        console.log("posicion : " + posicion)
+        console.log("array : " + array)
+    })
+
+    //agregar un elemento al final
+    let nuevoFinal = frutas.push("piña")
+    //eliminar ultimo elemento
+    let eliminarUltimo = frutas.pop();
+    //agregar al principio
+    let agregarInicio = frutas.unshift('Fresa');
+    //eliminar al principio
+    let eliminarInicio = frutas.shift();
+
+    //buscar id de un elemento
+    let buscarIndex = frutas.indexOf('Pera');
+
+    //eliminar cualquier elemento con posicion
+    let elimarCualquiera = frutas.splice(buscarIndex,1)
+
+    console.log("id del elemento"+buscarIndex);
+
+    //copiar un array completo
+    let frutas2 = frutas.slice();
+
+    console.log("primer array1")    
+    frutas.forEach(function(elemento,posicion,array){
+        console.log(posicion,elemento)
+    })
+    console.log("primer array2")  
+    frutas2.forEach(function(elemento,posicion,array){
+        console.log(posicion,elemento)
+    })
+    
+
+
+</script>
+</html>

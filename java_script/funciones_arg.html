@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function pedirValores(){
+        let val = { v1: parseFloat(prompt("ingresar valor 1")),
+                    v2: parseFloat(prompt("ingresar valor 2")),
+                   }
+        return val;
+    }
+
+    function sumar(arg1,arg2){
+        let opsumar = arg1 + arg2;
+        return opsumar;
+    }
+
+    function mostrarValores (Vmostsar){
+        alert(Vmostsar);
+    }
+    let valoresCap = pedirValores();
+    let resultadoOperacion = sumar(valoresCap.v1,valoresCap.v2);
+    mostrarValores(resultadoOperacion);
+    
+
+    
+</script>
+</html>

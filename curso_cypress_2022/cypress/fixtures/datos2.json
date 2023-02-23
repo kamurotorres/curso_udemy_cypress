@@ -1,0 +1,7 @@
+[
+    {  "nombre":"Kevin","email": "kevin@gmail.com","dir1": "direccion uno", "dir2":"direccion dos"   },
+    {  "nombre":"Kevin1","email": "kevin1@gmail.com","dir1": "direccion1 uno", "dir2":"direccion1 dos"   },
+    {  "nombre":"Kevin2","email": "kevin2@gmail.com","dir1": "direccion2 uno", "dir2":"direccion2 dos"   },
+    {  "nombre":"Kevin3","email": "kevin3@gmail.com","dir1": "direccion3 uno", "dir2":"direccion3 dos"   }
+
+]

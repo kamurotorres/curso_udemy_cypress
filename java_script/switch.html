@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function costoFruta(fruta){
+        switch(fruta) {
+            case 'Naranja':
+                console.log("el costo de la Naranja 20 pesos")
+            break;
+
+            case 'Melon':
+                console.log("El presio del melon es 50 pesos")
+            break;
+
+            case 'Piña':
+                console.log("el precio de la piña es 45 pesos")
+            break;
+
+            default:
+                console.log("no tengo el precio de la fruta "+ fruta)
+            break;
+        }
+    }
+    
+    let f = prompt("ingrese el nombre de la fruta a consultar Naranaja - Melon - Piña");
+    costoFruta(f); 
+
+</script>
+</html>

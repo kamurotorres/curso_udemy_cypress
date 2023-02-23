@@ -1,0 +1,10 @@
+#intalacion de la nueva version
+1.- npm install cypress --save-dev
+
+
+
+3- iniciar app de cyores
+npm run cypress:open
+
+
+4- selectores
